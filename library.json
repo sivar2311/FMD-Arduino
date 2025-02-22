@@ -1,0 +1,11 @@
+{
+    "name": "FMD",
+    "version": "0.0.1",
+    "description" : "Make your ESP32 discoverable through the Google Find my Device network.",
+    "dependencies": [
+        {
+            "name": "NimBLE-Arduino",
+            "version": "https://github.com/h2zero/NimBLE-Arduino @ 2.2.1"
+        }
+    ]
+}

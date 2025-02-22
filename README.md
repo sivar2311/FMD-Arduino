@@ -33,3 +33,6 @@ void loop() {
 
 ### Dependencies
 This library depends on [h2zero/NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino) which will be installed automatically to your PlatformIO project.
+
+### Discord
+[FMD-Arduino](https://discord.gg/CC8mE7pxHk)

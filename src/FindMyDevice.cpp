@@ -7,6 +7,7 @@ static void hex_string_to_packet(const char* hex, FMDNPacket& packet) {
 }
 
 void FindMyDevice::setEID(const char* eid) {
+    if (strlen(eid) != 40) return;
     hex_string_to_packet(eid, packet);
 }
 
@@ -25,6 +26,7 @@ void FindMyDevice::setUnwantedTrackingMode(uint8_t mode) {
 }
 
 void FindMyDevice::start() const {
+    if (!NimBLEDevice::isInitialized()) NimBLEDevice::init("");
     NimBLEDevice::stopAdvertising();
 
     NimBLEAdvertising*      pAdv = NimBLEDevice::getAdvertising();

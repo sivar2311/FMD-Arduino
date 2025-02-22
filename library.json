@@ -1,6 +1,6 @@
 {
     "name": "FMD",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description" : "Make your ESP32 discoverable through the Google Find my Device network.",
     "dependencies": [
         {
